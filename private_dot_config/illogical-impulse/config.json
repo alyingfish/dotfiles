@@ -33,6 +33,11 @@
     "clockX": -500,
     "clockY": -500,
     "fixedClockPosition": false,
+    "parallax": {
+      "enableSidebar": true,
+      "enableWorkspace": true,
+      "workspaceZoom": 1.07
+    },
     "wallpaperPath": "/home/lyingfish/Pictures/wallpapers/images/591b94ea26794d0dbe54fff93c8b8547.png"
   },
   "bar": {
@@ -50,10 +55,10 @@
       "monochromeIcons": true
     },
     "utilButtons": {
-      "showColorPicker": true,
+      "showColorPicker": false,
       "showDarkModeToggle": true,
-      "showKeyboardToggle": false,
-      "showMicToggle": true,
+      "showKeyboardToggle": true,
+      "showMicToggle": false,
       "showScreenSnip": true
     },
     "verbose": true,
