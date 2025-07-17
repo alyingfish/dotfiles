@@ -1,0 +1,12 @@
+patch:
+  # 仅使用「雾凇拼音」的默认配置，配置此行即可
+  __include: rime_ice_suggestion:/
+  # 以下根据自己所需自行定义
+  __patch:
+    menu/page_size: 5 #候选词个数
+    schema_list: # 不使用小鹤双拼去掉下两行
+      - schema: double_pinyin_flypy
+
+  # 禁止`shift`切换Rime输入法中英文，仅通过切换输入法切换中英文，因为Rime输入法的中英文切换是全局的，而输入法是可以局限在应用的（一个应用对应一个输入法，对应是否中英文）
+  ascii_composer/switch_key/Shift_L: noop
+  ascii_composer/switch_key/Shift_R: noop
