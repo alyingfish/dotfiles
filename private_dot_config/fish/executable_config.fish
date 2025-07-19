@@ -46,5 +46,5 @@ zoxide init --cmd cd fish | source # start zoxide and replace `cd`
 
 # fzf-fish
 # ctrl+O 用EDITOR打开文件，ctrl-d显示目录, ctrl-h显示隐藏，ctrl-f恢复
-# set fzf_directory_opts "--bind=ctrl-o:execute($EDITOR {} &> /dev/tty),ctrl-d:reload(fd --color=always --type directory),ctrl-h:reload(fd --color=always --hidden),ctrl-f:reload(fd --color=always)"
-# set fzf_preview_dir_cmd eza -lha --icons=auto --sort=name --group-directories-first --color=always
+set fzf_directory_opts "--bind=ctrl-o:execute($EDITOR {} &> /dev/tty),ctrl-d:reload(fd --color=always --type directory),ctrl-h:reload(fd --color=always --hidden),ctrl-f:reload(fd --color=always)"
+set fzf_preview_dir_cmd eza -lha --icons=auto --sort=name --group-directories-first --color=always
