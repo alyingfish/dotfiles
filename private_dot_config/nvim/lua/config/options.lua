@@ -5,6 +5,6 @@
 -- neovide configurations
 if vim.g.neovide then
   vim.o.guifont = "Maple Mono NF CN:h9"
-  vim.g.neovide_scale_factor = 1.0
+  vim.g.neovide_scale_factor = 1.25
   vim.g.neovide_refresh_rate = 160
 end
