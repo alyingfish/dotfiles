@@ -3,27 +3,18 @@ plugins = ["scratchpads"]
 
 [scratchpads.term]
 animation = "fromTop"
-command = "kitty --class kitty-dropterm --title kitty-dropterm"
-class = "kitty-dropterm"
+command = "kitty --class kitty-drop-term --title kitty-drop-term"
+class = "kitty-drop-term"
 size = "75% 50%"                                                # percent of full screen
 max_size = "1920px 100%"
 margin = "9%"                                                   # percent of half screen
 offset = "212%"                                                 # percent of half size, offset = (2*size + margin)/size
 
-[scratchpads.dropbtop]
+[scratchpads.btop]
 animation = "fromBottom"
-command = "kitty --class kitty-btop --title kitty-btop btop"
-class = "kitty-btop"
+command = "kitty --class kitty-drop-btop --title kitty-drop-btop btop"
+class = "kitty-drop-btop"
 size = "75% 75%"                                             # percent of full screen
 max_size = "1920px 100%"
 margin = "25%"                                               # percent of half screen
 offset = "233%"                                              # percent of half size, offset = (2*size + margin)/size
-
-[scratchpads.qalculate]
-animation = "fromLeft"
-command = "qalculate-gtk"
-class = "qalculate-gtk"
-size = "40% 50%"          # percent of full screen
-lazy = true
-margin = "2%"             # percent of half screen
-offset = "205%"           # percent of half size, offset = (2*size + margin)/size

@@ -36,7 +36,7 @@ abbr mkdir 'mkdir -p'
 
 abbr nv nvim
 abbr cz chezmoi
-set -gx ABBR_TIPS_ALIAS_WHITELIST "nv cz"
+set -gx ABBR_TIPS_ALIAS_WHITELIST nv
 
 # set default editor
 set -gx EDITOR nvim
