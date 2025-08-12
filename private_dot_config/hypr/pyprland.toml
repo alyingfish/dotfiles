@@ -12,7 +12,7 @@ offset = "212%"                                                 # percent of hal
 
 [scratchpads.btop]
 animation = "fromBottom"
-command = "kitty --class kitty-drop-btop --title kitty-drop-btop btop"
+command = "kitty --class kitty-drop-btop --title kitty-drop-btop fish -c btop" # using fish -c btop to auto using fish's color to tty theme of btop
 class = "kitty-drop-btop"
 size = "75% 75%"                                             # percent of full screen
 max_size = "1920px 100%"
