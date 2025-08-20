@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=LX Music
+Exec=/opt/lx-music-desktop/lx-music-desktop %U --enable-features=WaylandWindowDecorations --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-wayland-ime
+Terminal=false
+Type=Application
+Icon=lx-music-desktop
+StartupWMClass=lx-music-desktop
+Name[zh_CN]=LX Music
+Name[zh_TW]=LX Music
+Encoding=UTF-8
+MimeType=x-scheme-handler/lxmusic;
+StartupNotify=false
+Comment=一个免费的音乐查找助手
+Categories=Utility;AudioVideo;Audio;Player;Music;
