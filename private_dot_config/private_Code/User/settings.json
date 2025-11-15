@@ -37,8 +37,8 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "playwright.reuseBrowser": false,
-  "playwright.showTrace": true,
+  "playwright.reuseBrowser": true,
+  "playwright.showTrace": false,
   "playwright.updateSnapshots": "changed",
   "playwright.pickLocatorCopyToClipboard": true
   //

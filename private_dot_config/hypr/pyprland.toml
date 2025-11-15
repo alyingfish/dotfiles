@@ -3,18 +3,18 @@ plugins = ["scratchpads"]
 
 [scratchpads.term]
 animation = "fromTop"
-command = "kitty -1 --class kitty-drop-term --title kitty-drop-term"
+command = "kitty --class kitty-drop-term --title kitty-drop-term"
 class = "kitty-drop-term"
-size = "75% 50%"                                                     # percent of full screen
+size = "75% 50%"                                                  # percent of full screen
 max_size = "1920px 100%"
-margin = "9%"                                                        # percent of half screen
-offset = "212%"                                                      # percent of half size, offset = (2*size + margin)/size
+margin = "9%"                                                     # percent of half screen
+offset = "212%"                                                   # percent of half size, offset = (2*size + margin)/size
 
 [scratchpads.btop]
 animation = "fromBottom"
-command = "kitty -1 --class kitty-drop-btop --title kitty-drop-btop fish -c btop" # using fish -c btop to auto using fish's color to tty theme of btop
+command = "kitty --class kitty-drop-btop --title kitty-drop-btop fish -c btop" # using fish -c btop to auto using fish's color to tty theme of btop
 class = "kitty-drop-btop"
-size = "75% 75%"                                                                  # percent of full screen
+size = "75% 75%"                                                               # percent of full screen
 max_size = "1920px 100%"
-margin = "25%"                                                                    # percent of half screen
-offset = "233%"                                                                   # percent of half size, offset = (2*size + margin)/size
+margin = "25%"                                                                 # percent of half screen
+offset = "233%"                                                                # percent of half size, offset = (2*size + margin)/size
