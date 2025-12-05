@@ -1,8 +1,8 @@
 # Lying Fish's dotfiles
 
-managed with [chezmoi](https://www.chezmoi.io/).
+使用 [chezmoi](https://www.chezmoi.io/) 管理配置文件。
 
-## Run below cmd to install dependencies:
+依赖：
 
 ```bash
 sudo pacman -S paru chezmoi
@@ -12,28 +12,40 @@ paru -S firefox chromium google-chrome
 ```
 ```
 
-input method:
+## 输入法
+
 ```bash
 paru -S fcitx5-im fcitx5-chinese-addons fcitx5-configtool fcitx5-rime
 paru -S rime-ice
 paru -S fcitx5-skin-fluentdark-git fcitx5-skin-fluentlight-git
 ```
 
-font. check:<https://github.com/wxmup/linux-fonts-from-apple>
+## 字体
+
+采用类苹果字体方案：
+
+- 中文字体：苹方字体
+- 英文字体：Inter
+- 等宽字体：Maple Mono NF CN
+- emoji：apple color emoji
+
+详细见 <https://github.com/wxmup/linux-fonts-from-apple?tab=readme-ov-file#readme>
+
+maple 字体 Github releases: <https://github.com/subframe7536/maple-font/releases>
+
 
 ```bash
 sudo pacman -S inter-font ttf-nerd-fonts-symbols-mono 
 paru -S otf-apple-pingfang ttf-apple-emoji ttf-maplemono-cn-unhinted
 ```
 
-
-rgb:
+## rgb
 ```bash
 paru -S openrgb
 ```
 
 
-editor:
+## editor
 ```bash
 paru -S visual-studio-code-bin
 paru -S neovim git lazygit tree-sitter-cli gcc curl fzf ripgrep fd kitty
