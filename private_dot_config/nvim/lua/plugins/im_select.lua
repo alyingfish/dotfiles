@@ -1,9 +1,6 @@
 return {
   {
     "keaising/im-select.nvim",
-    enabled = function()
-      return vim.g.neovide == nil
-    end,
     vscode = true,
     config = function()
       require("im_select").setup({

@@ -2,13 +2,6 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
--- neovide keymaps
-if vim.g.neovide then
-  -- paste with Ctrl+shift+V
-  vim.keymap.set({ "i", "c" }, "<CS-v>", "<C-R>+")
-  vim.keymap.set({ "n", "v" }, "<CS-v>", '"+P')
-end
-
 -- cd to directory of current file
 vim.keymap.set("n", "<leader>cd", "<cmd>cd %:p:h<cr><cmd>pwd<cr>")
 -- Bind p in visual mode to paste without overriding the current register
