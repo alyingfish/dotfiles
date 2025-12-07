@@ -8,10 +8,23 @@
 sudo pacman -S paru chezmoi
 ```
 
-### 终端、Shell
+### 终端
 
 ```bash
-paru -S fish kitty ghostty starship btop zoxide eza yazi wl-clipboard
+paru -S kitty ghostty starship
+```
+
+### 命令行工具
+
+```bash
+paru -S btop zoxide eza yazi wl-clipboard bat git fzf ripgrep fd 
+```
+
+### Shell
+
+```bash
+paru -S fish fisher
+fisher update # 更新 fish 插件
 ```
 
 ### 浏览器
