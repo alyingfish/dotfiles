@@ -45,6 +45,10 @@ window-rule {
 //
 
 window-rule {
+    draw-border-with-background false
+}
+
+window-rule {
     match app-id=r#"^lx-music-desktop$"#
 
     open-floating true
@@ -79,4 +83,13 @@ window-rule {
         active-color "#f38ba8"
         inactive-color "#7d0d2d"
     }
+}
+
+// Overview with Wallpaper. Refer: <https://github.com/YaLTeR/niri/wiki/Overview#backdrop-customization>
+layer-rule {
+    match namespace="^swww-daemon$"
+    place-within-backdrop true
+}
+layout {
+    background-color "transparent"
 }

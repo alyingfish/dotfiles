@@ -18,4 +18,5 @@ spawn-at-startup "mako"
 spawn-at-startup "swww-daemon"
 spawn-sh-at-startup "swww img ~/Pictures/ai.png"
 spawn-sh-at-startup "quickshell -p ~/Programs/lyingshell/"
+spawn-sh-at-startup "openrgb --profile 'starnight'"
 
