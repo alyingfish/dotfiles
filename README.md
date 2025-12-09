@@ -69,11 +69,7 @@ sudo pacman -S mpvpaper
 ### editor
 
 ```bash
-paru -S visual-studio-code-bin
-paru -S neovim git lazygit tree-sitter-cli gcc curl fzf ripgrep fd kitty
-git clone https://github.com/LazyVim/starter ~/.config/nvim
-rm -rf ~/.config/nvim/.git
-nvim
+paru -S visual-studio-code-bin neovim
 ```
 
 ### conda

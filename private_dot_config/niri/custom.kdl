@@ -2,18 +2,7 @@ cursor {
     xcursor-theme "Bibata-Modern-Ice"
 
     hide-when-typing
-    hide-after-inactive-ms 3000
-}
-
-spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
-spawn-at-startup "mako"
-spawn-at-startup "swww-daemon"
-spawn-sh-at-startup "swww img ~/Pictures/ai.png"
-spawn-sh-at-startup "quickshell -p ~/Programs/lyingshell/"
-
-output "PNP(SAC) G7u Pro 0001" {
-    mode "3840x2160@144.000"
-    scale 1.75
+    hide-after-inactive-ms 5000
 }
 
 binds {
