@@ -13,10 +13,12 @@
 // Custom
 //
 
+spawn-sh-at-startup "swww-daemon"
+spawn-sh-at-startup "swww-daemon -n overlay"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-at-startup "mako"
-spawn-at-startup "swww-daemon"
 spawn-sh-at-startup "swww img ~/Pictures/ai.png"
+spawn-sh-at-startup "swww img -n overlay ~/Pictures/ai.png"
 spawn-sh-at-startup "quickshell -p ~/Programs/lyingshell/"
 spawn-sh-at-startup "openrgb --profile 'starnight'"
 

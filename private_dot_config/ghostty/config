@@ -49,3 +49,4 @@
 # resize-overlay-duration = 4s 200ms
 theme = Catppuccin Mocha
 font-family = "Maple Mono NF CN"
+window-padding-x=10

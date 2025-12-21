@@ -23,7 +23,7 @@ if status is-interactive
     zoxide init --cmd cd fish | source # start zoxide and replace `cd`
 
     # Add common user paths (if they exist)
-    # fish_add_path $HOME/.local/bin
+    fish_add_path $HOME/.local/bin
     # fish_add_path $HOME/.cargo/bin
     # fish_add_path $HOME/go/bin
 

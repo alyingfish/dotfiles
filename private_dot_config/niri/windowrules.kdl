@@ -87,9 +87,9 @@ window-rule {
 
 // Overview with Wallpaper. Refer: <https://github.com/YaLTeR/niri/wiki/Overview#backdrop-customization>
 layer-rule {
-    match namespace="^swww-daemon$"
+    match namespace="^swww-daemonoverlay$"
     place-within-backdrop true
 }
-layout {
-    background-color "transparent"
-}
+// layout {
+//     background-color "transparent"
+// }

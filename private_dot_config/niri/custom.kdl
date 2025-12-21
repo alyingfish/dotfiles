@@ -4,7 +4,3 @@ cursor {
     hide-when-typing
     hide-after-inactive-ms 5000
 }
-
-binds {
-    Mod+T hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
-}
