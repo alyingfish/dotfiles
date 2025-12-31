@@ -1,47 +1,53 @@
- {
+{
+  //
+  // Appearance
+  //
   "window.titleBarStyle": "custom",
+  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.colorTheme": "Catppuccin Mocha",
   "catppuccin.accentColor": "lavender",
-  "terminal.external.linuxExec": "kitty",
   "editor.fontFamily": "'Maple Mono NF CN', 'Droid Sans Mono', 'monospace', monospace",
   "editor.fontLigatures": true,
   "editor.lineNumbers": "relative",
-  "editor.acceptSuggestionOnEnter": "off",
+  //
+  // Appearance
+  //
+
+  //
+  // format settings
+  //
   "editor.formatOnSave": true,
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
-  //
-  //  vscode-neovim, Start
-  //
-  "extensions.experimental.affinity": {
-    "asvetliakov.vscode-neovim": 1
-  },
-  //
-  //  vscode-neovim, End
-  //
-
-  //
-  // Rust Analyzer, Start
-  //
-  "files.readonlyInclude": {
-    "**/.cargo/registry/src/**/*.rs": true,
-    "**/.cargo/git/checkouts/**/*.rs": true,
-    "**/lib/rustlib/src/rust/library/**/*.rs": true
-  },
-  "containers.containerClient": "com.microsoft.visualstudio.containers.docker",
-  "github.copilot.enable": {
-    "*": false
-  },
-  "git.enableSmartCommit": true,
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "playwright.reuseBrowser": true,
-  "playwright.showTrace": false,
-  "playwright.updateSnapshots": "changed",
-  "playwright.pickLocatorCopyToClipboard": true
   //
-  // Rust Analyzer, End
+  // format settings
   //
+
+  //
+  // qt settings
+  //
+  "qt-core.additionalQtPaths": [
+    {
+      "name": "Qt-5.15.18-linux-g++_from_PATH",
+      "path": "/usr/bin/qmake"
+    },
+    {
+      "name": "Qt-6.10.1-linux-g++",
+      "path": "/usr/bin/qmake6"
+    }
+  ],
+  "qt-qml.qmlls.useQmlImportPathEnvVar": true,
+  "qt-qml.doNotAskForQmllsDownload": true,
+  "qt-qml.qmlls.customExePath": "/usr/lib/qt6/bin/qmlls",
+  "qt-qml.qmlls.customDocsPath": "/usr/share/doc/qt6/",
+  //
+  // qt settings
+  //
+
+  "editor.acceptSuggestionOnEnter": "off",
+  "terminal.external.linuxExec": "kitty"
 }

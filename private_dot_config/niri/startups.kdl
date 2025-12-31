@@ -21,4 +21,3 @@ spawn-sh-at-startup "swww img ~/Pictures/ai.png"
 spawn-sh-at-startup "swww img -n overlay ~/Pictures/ai.png"
 spawn-sh-at-startup "quickshell -p ~/Programs/lyingshell/"
 spawn-sh-at-startup "openrgb --profile 'starnight'"
-
