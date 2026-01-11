@@ -48,6 +48,46 @@
   // qt settings
   //
 
+  //
+  // vim settings
+  //
+  "vim.leader": "<space>",
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.incsearch": true,
+  "vim.easymotion": true,
+  "vim.smartRelativeLine": true,
+  "vim.useCtrlKeys": true, // Let Vim handle Ctrl keys (config exceptions below)
+
+  // 2. Pane Navigation: Move between VS Code splits naturally
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // Move between splits using Ctrl + h/j/k/l
+    { "before": ["<C-h>"], "commands": ["workbench.action.navigateLeft"] },
+    { "before": ["<C-j>"], "commands": ["workbench.action.navigateDown"] },
+    { "before": ["<C-k>"], "commands": ["workbench.action.navigateUp"] },
+    { "before": ["<C-l>"], "commands": ["workbench.action.navigateRight"] },
+
+    // Leader Shortcuts
+    // <space>+q to close active editor
+    {
+      "before": ["<leader>", "b", "d"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    }
+  ],
+
+  // 3. Handle Keys: Pass specific keys back to VS Code
+  // This prevents Vim from blocking standard shortcuts you might still want
+  "vim.handleKeys": {
+    "<C-f>": false, // Use VS Code's native Find
+    "<C-p>": false, // Use VS Code's Quick Open
+    "<C-a>": false, // Use VS Code's Select All
+    "<C-c>": false, // Use VS Code's native Copy (for safety)
+    "<C-v>": false // Use VS Code's native Paste (for safety)
+  },
+  //
+  // vim settings
+  //
+
   "editor.acceptSuggestionOnEnter": "off",
   "terminal.external.linuxExec": "kitty"
 }

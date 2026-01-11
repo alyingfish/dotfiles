@@ -1,0 +1,19 @@
+[config]
+# reload_apps = true
+# # Optional: Set the wallpaper tool if you want Matugen to handle the background setting
+# set_wallpaper = true
+# wallpaper_tool = "swww" 
+
+[config.custom_colors]
+red = { color = "#ffb4ab", blend = true }
+green = { color = "#a6d397", blend = true }
+yellow = { color = "#e3c480", blend = true }
+blue = { color = "#a1c7ff", blend = true }
+magenta = { color = "#ffade1", blend = true }
+cyan = { color = "#8ef6ff", blend = true }
+orange = { color = "#ffb285", blend = true } # Optional, good for extras
+
+[templates.kitty]
+input_path = "~/.config/matugen/templates/kitty.conf"
+output_path = "~/.config/kitty/themes/matugen-theme.conf"
+post_hook = "kitty +kitten themes --reload-in=all matugen-theme"
