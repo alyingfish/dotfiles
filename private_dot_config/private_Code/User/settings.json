@@ -16,12 +16,12 @@
   //
   // format settings
   //
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   //
   // format settings
@@ -33,12 +33,12 @@
   "qt-core.additionalQtPaths": [
     {
       "name": "Qt-5.15.18-linux-g++_from_PATH",
-      "path": "/usr/bin/qmake"
+      "path": "/usr/bin/qmake",
     },
     {
       "name": "Qt-6.10.1-linux-g++",
-      "path": "/usr/bin/qmake6"
-    }
+      "path": "/usr/bin/qmake6",
+    },
   ],
   "qt-qml.qmlls.useQmlImportPathEnvVar": true,
   "qt-qml.doNotAskForQmllsDownload": true,
@@ -71,8 +71,8 @@
     // <space>+q to close active editor
     {
       "before": ["<leader>", "b", "d"],
-      "commands": ["workbench.action.closeActiveEditor"]
-    }
+      "commands": ["workbench.action.closeActiveEditor"],
+    },
   ],
 
   // 3. Handle Keys: Pass specific keys back to VS Code
@@ -82,12 +82,24 @@
     "<C-p>": false, // Use VS Code's Quick Open
     "<C-a>": false, // Use VS Code's Select All
     "<C-c>": false, // Use VS Code's native Copy (for safety)
-    "<C-v>": false // Use VS Code's native Paste (for safety)
+    "<C-v>": false, // Use VS Code's native Paste (for safety)
   },
   //
   // vim settings
   //
 
   "editor.acceptSuggestionOnEnter": "off",
-  "terminal.external.linuxExec": "kitty"
+  "terminal.external.linuxExec": "kitty",
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "dart.flutterSdkPath": "/home/lyingfish/development/flutter",
+  "claudeCode.preferredLocation": "panel",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "git.openRepositoryInParentFolders": "never",
+  "workbench.editorAssociations": {
+    "{git,gitlens,chat-editing-snapshot-text-model,copilot,git-graph,git-graph-3}:/**/*.qrc": "default",
+    "{git,gitlens,chat-editing-snapshot-text-model,copilot,git-graph,git-graph-3}:/**/*.ui": "default",
+    "*.qrc": "qt-core.qrcEditor",
+  },
+  "editor.largeFileOptimizations": false,
 }

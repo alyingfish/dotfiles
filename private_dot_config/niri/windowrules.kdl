@@ -58,6 +58,11 @@ window-rule {
 }
 
 window-rule {
+    match app-id=r#"^localsend$"#
+}
+
+
+window-rule {
     match is-active=false
     opacity 0.9
 }
@@ -87,7 +92,7 @@ window-rule {
 
 // Overview with Wallpaper. Refer: <https://github.com/YaLTeR/niri/wiki/Overview#backdrop-customization>
 layer-rule {
-    match namespace="^swww-daemonoverlay$"
+    match namespace="^awww-daemonoverlay$"
     place-within-backdrop true
 }
 // layout {

@@ -57,3 +57,8 @@ output "PNP(SAC) G7u Pro 0001" {
     variable-refresh-rate on-demand=true
 }
 
+output "HDMI-A-1" {
+    mode "3840x2160@30.000"
+    scale 2
+    transform "normal"
+}

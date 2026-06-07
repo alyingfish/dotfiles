@@ -1,8 +1,4 @@
 [config]
-# reload_apps = true
-# # Optional: Set the wallpaper tool if you want Matugen to handle the background setting
-# set_wallpaper = true
-# wallpaper_tool = "swww" 
 
 [config.custom_colors]
 red = { color = "#ffb4ab", blend = true }
