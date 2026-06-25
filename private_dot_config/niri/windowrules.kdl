@@ -57,15 +57,6 @@ window-rule {
     }
 }
 
-window-rule {
-    match app-id=r#"^localsend$"#
-}
-
-
-window-rule {
-    match is-active=false
-    opacity 0.9
-}
 
 // Indicate screencasted windows with red colors.
 window-rule {
@@ -90,11 +81,27 @@ window-rule {
     }
 }
 
+// Terminals: translucent always, blur when active.
+window-rule {
+    match app-id=r#"^kitty$"#
+    match app-id=r#"^com\.mitchellh\.ghostty$"#
+    match app-id=r#"^Alacritty$"#
+
+    opacity 0.9
+}
+
+window-rule {
+    match app-id=r#"^kitty$"# is-active=true
+    match app-id=r#"^com\.mitchellh\.ghostty$"# is-active=true
+    match app-id=r#"^Alacritty$"# is-active=true
+
+    background-effect {
+        blur true
+    }
+}
+
 // Overview with Wallpaper. Refer: <https://github.com/YaLTeR/niri/wiki/Overview#backdrop-customization>
 layer-rule {
     match namespace="^awww-daemonoverlay$"
     place-within-backdrop true
 }
-// layout {
-//     background-color "transparent"
-// }

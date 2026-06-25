@@ -41,4 +41,6 @@ animations {
 }
 
 include "windowrules.kdl"
+include "lyingshell-colors.kdl"
+
 include "custom.kdl"
