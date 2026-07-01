@@ -13,8 +13,7 @@
 // Custom
 //
 
-spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
-spawn-sh-at-startup "awww-daemon -n overlay  & sleep 1 && awww img -n overlay ~/Pictures/grassland-light.png"
-spawn-at-startup "mako"
 spawn-sh-at-startup "~/Programs/lyingshell-workspace/worktrees/lyingshell-ai-main/lyingshell/scripts/run.sh"
+spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+spawn-at-startup "mako"
 spawn-sh-at-startup "openrgb --profile 'starnight'"
